@@ -1,10 +1,12 @@
 /**
  * Created by guochao on 2017/7/2.
  */
-define(['jquery','text!teacher/coursemanageEdit.html','template','bootstrap','boostrap_date'],function(){
+define(['jquery','text!teacher/coursemanageEdit.html','template','bootstrap','boostrap_date'],function($,htm,tpl){
 
       return function(){
-          $('section>.maincont').empty();
+          console.log(htm);
+          $('section>.maincont').empty().html(htm);
+
       }
 
 
