@@ -1,0 +1,43 @@
+div.content {
+  display: flex;
+  height: 500px;
+  width: 1356px;
+}
+div.content aside {
+  width: 200px;
+  height: 600px;
+  background: red;
+}
+div.content aside div.pict {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+}
+div.content aside div.pict img {
+  width: 100%;
+  border-radius: 50%;
+}
+div.content section {
+  flex: 1;
+  height: 600px;
+  overflow: auto;
+}
+div.content section div.top {
+  margin: 0px;
+  line-height: 56px;
+  border-bottom: 1px solid black;
+  background: white;
+}
+div.content section div.top div.left {
+  padding-left: 24px;
+}
+div.content section div.top div.right {
+  text-align: right;
+}
+div.content section div.top div.right a {
+  padding-right: 50px;
+}
+div.content div.maincont > div:first-child {
+  padding-right: 50px;
+  margin: 20px 0;
+}

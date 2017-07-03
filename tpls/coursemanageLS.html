@@ -1,0 +1,21 @@
+<ul class="media-list">
+    {{each}}
+    <li class="media" style='height:200px;border-bottom:1px solid black;margin: 0;padding:10px 0;'>
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{$value.cs_cover}}" alt="..." style='width:240px;'>
+            </a>
+        </div>
+        <div class="media-body">
+            <div>
+                <h4 class="media-heading pull-left">{{$value.cs_name}}</h4>
+                <button type="button" class="btn btn-success btedit">编辑课时</button>
+                <button type="button" class="btn btn-primary btinfo">基本信息</button>
+            </div>
+            <p>-讲师：{{$value.tc_name}}</p>
+            <p>-分类：{{$value.cg_name}}</p>
+        </div>
+    </li>
+
+    {{/each}}
+</ul>
